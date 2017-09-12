@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.cmf.occi.tosca2occi/src" modelPluginID="org.eclipse.cmf.occi.tosca2occi"
+    modelName="Tosca2occi" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.cmf.occi.core/model/OCCI.genmodel#//occi" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>tosca2occi.ecore</foreignModel>
+  <genPackages prefix="Tosca2occi" disposableProviderFactory="true" ecorePackage="tosca2occi.ecore#/">
+    <genClasses ecoreClass="tosca2occi.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tosca2occi.ecore#//Model/mapping"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="tosca2occi.ecore#//Mapping"/>
+    <genClasses ecoreClass="tosca2occi.ecore#//KindMapping">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tosca2occi.ecore#//KindMapping/toscaKind"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tosca2occi.ecore#//KindMapping/occiTypes"/>
+    </genClasses>
+    <genClasses ecoreClass="tosca2occi.ecore#//AttributeMapping">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tosca2occi.ecore#//AttributeMapping/toscaAttribute"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tosca2occi.ecore#//AttributeMapping/occiAttribute"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

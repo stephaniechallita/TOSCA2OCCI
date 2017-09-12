@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated tosca2occi -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="tosca2occi.presentation.Tosca2occiModelWizardID"
+            name="%_UI_Tosca2occiModelWizard_label"
+            class="tosca2occi.presentation.Tosca2occiModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Tosca2occiModelFile.gif">
+         <description>%_UI_Tosca2occiModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated tosca2occi -->
+      <editor
+            id="tosca2occi.presentation.Tosca2occiEditorID"
+            name="%_UI_Tosca2occiEditor_label"
+            icon="icons/full/obj16/Tosca2occiModelFile.gif"
+            extensions="tosca2occi"
+            class="tosca2occi.presentation.Tosca2occiEditor"
+            contributorClass="tosca2occi.presentation.Tosca2occiActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

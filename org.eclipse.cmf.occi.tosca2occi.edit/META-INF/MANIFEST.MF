@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.cmf.occi.tosca2occi.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: tosca2occi.provider.Tosca2occiEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: tosca2occi.provider
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.cmf.occi.tosca2occi;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ org.eclipse.cmf.occi.core;visibility:=reexport,
+ org.eclipse.cmf.occi.core.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
